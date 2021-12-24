@@ -4,7 +4,10 @@ import loading from '../../img/loading.gif'
 
 const Preloader = () => {
   return (
-    <img className="preloader" src={loading} alt="Loading" />
+    <div className="preloader__container">
+      <img className="preloader" src={loading} alt="Loading" />
+    </div>
+    
   );
 };
 

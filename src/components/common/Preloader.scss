@@ -1,4 +1,11 @@
 .preloader {
     width: 80px;
     height: 80px;
+
+    &__container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
