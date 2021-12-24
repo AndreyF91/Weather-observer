@@ -1,0 +1,12 @@
+.weather {
+    &__container {
+        padding: 0 5px;
+        width: 240px;
+        border: 1px solid #000;
+        margin: 10px;
+
+        p {
+            margin: 3px;
+        }
+    }
+}
