@@ -8,10 +8,11 @@ import {
   YAxis,
   Tooltip,
   ResponsiveContainer,
+  ReferenceLine,
 } from "recharts";
 import Preloader from "./common/Preloader";
 
-const Chart = ({ data, isFetching }) => {
+const Chart = ({ data, isFetching, currentWeather }) => {
   const gradientOffset = () => {
     const dataMax = Math.max(...data.map((i) => i.temperature));
     const dataMin = Math.min(...data.map((i) => i.temperature));
@@ -49,6 +50,7 @@ const Chart = ({ data, isFetching }) => {
             <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
             <XAxis dataKey="time" interval="preserveStart" angle={20} />
             <YAxis />
+            <ReferenceLine x={currentWeather} stroke="red" label="Сейчас" />
             <Tooltip />
             <defs>
               <linearGradient id="splitColor" x1="0" y1="0" x2="0" y2="1">
