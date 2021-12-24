@@ -1,5 +1,6 @@
 import React from "react";
 import "./CurrentWeather.scss";
+import arrow from "../img/arrow-up.png";
 
 const CurrentWeather = ({
   time,
@@ -59,7 +60,7 @@ const CurrentWeather = ({
       <p>Температура: {temperature} C&#176;</p>
       <p>Погода: {weather}</p>
       <p>Скорость ветра: {windspeed} м/с</p>
-      <p>Направление ветра: {winddirection}</p>
+      <p>Направление ветра: {winddirection} <img style={{transform: `rotate(${winddirection}deg)`}} src={arrow} alt="стрелка" /></p>
     </div>
   );
 };
