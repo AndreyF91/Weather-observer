@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Weather-observer/static/css/main.2cf89bd9.css",
+    "main.js": "/Weather-observer/static/js/main.0653d78f.js",
+    "static/media/loading.gif": "/Weather-observer/static/media/loading.816e2b9b9cf8e61a5db0.gif",
+    "index.html": "/Weather-observer/index.html",
+    "main.2cf89bd9.css.map": "/Weather-observer/static/css/main.2cf89bd9.css.map",
+    "main.0653d78f.js.map": "/Weather-observer/static/js/main.0653d78f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2cf89bd9.css",
+    "static/js/main.0653d78f.js"
+  ]
+}
