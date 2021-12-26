@@ -1,0 +1,30 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        
+        p {
+            margin-right: 10px;
+        }
+    }
+    &__input {
+        width: 180px;
+        padding: 1px 5px;
+    }
+    &__checkbox {
+        cursor: pointer;
+
+        input {
+            margin-right: 5px;
+        }
+    }
+    &__checkbox+&__checkbox {
+        margin-left: 10px;
+    }
+}
