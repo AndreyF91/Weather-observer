@@ -60,7 +60,7 @@ const CurrentWeather = ({
       <p>Температура: {temperature} C&#176;</p>
       <p>Погода: {weather}</p>
       <p>Скорость ветра: {windspeed} м/с</p>
-      <p>Направление ветра: {winddirection} <img style={{transform: `rotate(${winddirection}deg)`}} src={arrow} alt="стрелка" /></p>
+      <p>Направление ветра: {winddirection} <img style={{transform: `rotate(${180 + winddirection}deg)`}} src={arrow} alt="стрелка" /></p>
     </div>
   );
 };
